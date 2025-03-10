@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas de Opción Múltiple</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pngwing.com (5).png" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Cuestionario Insertion Sort</h1>
+
+    <p>A continuación, se adjunta el archivo de Python que contiene el <a id = "download-link" href="Insertion_sort.py" download="Insertion_sort.py">código</a>
+    </p>
+
+    
+    <div class="grid-container">
+        <!-- Pregunta 1 -->
+        <div class="question-container">
+            <h2>Pregunta 1:</h2>
+            <p>¿Cuál es la capital de Francia?</p>
+            <button id="infoBtn1" class="info-btn" style="display: none;" onclick="toggleInfo(1)">ℹ️ Más info</button>
+            <p id="info1" style="display: none;">París es la capital de Francia desde 508 d.C.</p>
+            <form id="quizForm1">
+                <input type="radio" name="respuesta1" value="madrid"> Madrid<br>
+                <input type="radio" name="respuesta1" value="berlín"> Berlín<br>
+                <input type="radio" name="respuesta1" value="parís"> París<br>
+                <input type="radio" name="respuesta1" value="roma"> Roma<br>
+            </form>
+            <p id="resultado1"></p>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question-container">
+            <h2>Pregunta 2:</h2>
+            <p>¿Cuál es la capital de Italia?</p>
+            <button id="infoBtn2" class="info-btn" style="display: none;" onclick="toggleInfo(2)">ℹ️ Más info</button>
+            <p id="info2" style="display: none;">Roma es la capital de Italia desde la antigüedad.</p>
+            <form id="quizForm2">
+                <input type="radio" name="respuesta2" value="lisboa"> Lisboa<br>
+                <input type="radio" name="respuesta2" value="roma"> Roma<br>
+                <input type="radio" name="respuesta2" value="atenas"> Atenas<br>
+                <input type="radio" name="respuesta2" value="parís"> París<br>
+            </form>
+            <p id="resultado2"></p>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question-container">
+            <h2>Pregunta 3:</h2>
+            <p>¿Cuál es la capital de Alemania?</p>
+            <button id="infoBtn3" class="info-btn" style="display: none;" onclick="toggleInfo(3)">ℹ️ Más info</button>
+            <p id="info3" style="display: none;">Berlín es la capital de Alemania desde 1990.</p>
+            <form id="quizForm3">
+                <input type="radio" name="respuesta3" value="berlín"> Berlín<br>
+                <input type="radio" name="respuesta3" value="madrid"> Madrid<br>
+                <input type="radio" name="respuesta3" value="parís"> París<br>
+                <input type="radio" name="respuesta3" value="roma"> Roma<br>
+            </form>
+            <p id="resultado3"></p>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="question-container">
+            <h2>Pregunta 4:</h2>
+            <p>¿Cuál es la capital de España?</p>
+            <button id="infoBtn4" class="info-btn" style="display: none;" onclick="toggleInfo(4)">ℹ️ Más info</button>
+            <p id="info4" style="display: none;">Madrid es la capital de España desde 1561.</p>
+            <form id="quizForm4">
+                <input type="radio" name="respuesta4" value="berlín"> Berlín<br>
+                <input type="radio" name="respuesta4" value="madrid"> Madrid<br>
+                <input type="radio" name="respuesta4" value="parís"> París<br>
+                <input type="radio" name="respuesta4" value="roma"> Roma<br>
+            </form>
+            <p id="resultado4"></p>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="question-container">
+            <h2>Pregunta 5:</h2>
+            <p>¿Cuál es la capital de Portugal?</p>
+            <button id="infoBtn5" class="info-btn" style="display: none;" onclick="toggleInfo(5)">ℹ️ Más info</button>
+            <p id="info5" style="display: none;">Lisboa es la capital de Portugal desde 1255.</p>
+            <form id="quizForm5">
+                <input type="radio" name="respuesta5" value="lisboa"> Lisboa<br>
+                <input type="radio" name="respuesta5" value="madrid"> Madrid<br>
+                <input type="radio" name="respuesta5" value="parís"> París<br>
+                <input type="radio" name="respuesta5" value="roma"> Roma<br>
+            </form>
+            <p id="resultado5"></p>
+        </div>
+    </div>
+
+    <button id="comprobarBtn" onclick="verificarRespuestas()">Comprobar</button>
+    <footer><strong>Proyecto realizado por Giordano Castilla y Fernando Melero</strong></footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.795);
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas por defecto */
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.question-container {
+    background-color: #e6e6e6;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: hsl(211, 100%, 50%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#comprobarBtn {
+    padding: 8px 15px;
+    background-color: hsl(211, 100%, 50%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: hsl(211, 100%, 60%);
+}
+
+.info-btn {
+    display: none; /* Oculto por defecto */
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.info-btn:hover {
+    background-color: hsl(211, 100%, 35%);
+}
+
+.info-btn:active {
+    background-color: hsl(211, 100%, 45%);
+}
+
+#download-link{
+    color: hsl(189, 72%, 43%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#download-link:hover{
+    color: hsl(189, 72%, 53%);
+}
+
+#download-link:active{
+    color: hsl(41, 88%, 47%);
+}
+
+footer {
+    bottom: 0;  /* Lo ancla al fondo */
+    left: 0;
+    width: 100%;
+    background-color: rgba(39, 86, 50, 0.464);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+
+/* Media Query para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 columna */
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    #comprobarBtn {
+        padding: 10px 20px;
+    }
+
+    .info-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .question-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
