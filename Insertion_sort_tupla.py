@@ -1,39 +1,47 @@
-class OrderedRecordArray:
-    def __init__(self):
-        self.__a = []  # Lista para almacenar las tuplas
+class OrderedRecordArray(object):
+    def __init__(self, size):
+        self.__a = [None] * size  # Lista con tamaño predefinido
+        self.__size = size
+        self.__count = 0  # Contador de elementos insertados
 
     def insert(self, record):
-        """Inserta una tupla (clave, valor) en la lista."""
-        self.__a.append(record)  # Añade la tupla al final
+        if self.__count < self.__size:
+            self.__a[self.__count] = record
+            self.__count += 1
+        else:
+            raise IndexError("Array overflow.")
+
 
     def insertionSort(self):
-        """Devuelve una nueva lista ordenada con el algoritmo de ordenación por inserción."""
-        sorted_list = self.__a[:]  # Copia de la lista original
-        for i in range(1, len(sorted_list)):  
-            temp = sorted_list[i]  
-            inner = i  
-            while inner > 0 and temp[0] < sorted_list[inner - 1][0]:  
-                sorted_list[inner] = sorted_list[inner - 1]  
-                inner -= 1  
-            sorted_list[inner] = temp  
-        return sorted_list  # Devuelve la lista ordenada
+        for i in range(1, self.__count):  # Comienza desde el segundo elemento
+            temp = self.__a[i]  # Guarda el elemento que se va a insertar
+            inner = i  # Variable para recorrer la lista
+            # Compara el elemento con los elementos anteriores en la lista ordenada
+            while inner > 0 and temp[0] < self.__a[inner - 1][0]:
+                # Si el elemento en la posición inner es mayor que el de la posición anterior,
+                # mueve el elemento hacia adelante
+                self.__a[inner] = self.__a[inner - 1]
+                inner -= 1  # Retrocede al siguiente elemento
+            self.__a[inner] = temp  # Inserta el elemento en la posición correcta
+        return self.__a  # Devuelve la lista ordenada
+
+
 
     def __str__(self):
-        """Devuelve la lista sin ordenar como string."""
-        return str(self.__a)
+        return str(self.__a[:self.__count])  # Muestra solo los elementos insertados
 
 
 # Pruebas
-array = OrderedRecordArray()
+array = OrderedRecordArray(3)  # Definir tamaño inicial de 3
 
 # Insertar tuplas (clave numérica, valor)
-array.insert((2, "b"))
+array.insert((3, "b"))
 array.insert((1, "c"))
-array.insert((2, "a"))
+array.insert((3, "a"))
 
 # Mostrar lista sin ordenar
-print("Antes de ordenar:", array)
+print("Array before sorting:", array)
 
 # Aplicar ordenación y mostrar resultado
 sorted_array = array.insertionSort()
-print("Después de ordenar:", sorted_array)
+print("\nArray after insertion sort:", sorted_array)

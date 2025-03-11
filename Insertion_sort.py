@@ -77,10 +77,10 @@ arr.insert(1)
 arr.insert(6)
 
 print("Array before sorting:")
-arr.traverse()
+print(arr)
 
 arr.insertionSort()
 print("\nArray after insertion sort")
-arr.traverse()
+print(arr)
 
 
