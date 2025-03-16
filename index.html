@@ -11,7 +11,7 @@
 <body>
     <h1>Cuestionario Insertion Sort</h1>
 
-    <p>A continuación, se adjunta el archivo de Python que contiene el <a id = "download-link" href="Insertion_sort.py" download="Insertion_sort.py">código</a>
+    <p>Haz clic en el siguiente enlace para descargar el código de Insertion Sort en Python: <a id = "download-link" href="Insertion_sort.py" download="Insertion_sort.py">Insertion_sort.py</a>
     </p>
 
     
@@ -19,76 +19,153 @@
         <!-- Pregunta 1 -->
         <div class="question-container">
             <h2>Pregunta 1:</h2>
-            <p>¿Cuál es la capital de Francia?</p>
-            <button id="infoBtn1" class="info-btn" style="display: none;" onclick="toggleInfo(1)">ℹ️ Más info</button>
-            <p id="info1" style="display: none;">París es la capital de Francia desde 508 d.C.</p>
+            <p>La estabilidad en un algoritmo de ordenamiento puede referirse a:</p>
+            <button id="infoBtn1" class="info-btn" style="display: none;" onclick="toggleInfo(1)">Explicación</button>
+            <p id="info1" style="display: none;">Si dos elementos tienen la misma <strong>clave principal</strong>, el algoritmo estable mantiene el orden original de esos elementos según aparecían en la lista.</p>
             <form id="quizForm1">
-                <input type="radio" name="respuesta1" value="madrid"> Madrid<br>
-                <input type="radio" name="respuesta1" value="berlín"> Berlín<br>
-                <input type="radio" name="respuesta1" value="parís"> París<br>
-                <input type="radio" name="respuesta1" value="roma"> Roma<br>
+                <div>
+                    <input type="radio" name="respuesta1" value="p1_1" id="p1_1">
+                    <label for="p1_1">Elementos con claves secundarias siendo excluidos del ordenamiento.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta1" value="p1_2" id="p1_2">
+                    <label for="p1_2">Mantener los elementos con la misma clave principal en el mismo orden relativo dentro del grupo al que pertenecen.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta1" value="p1_3" id="p1_3">
+                    <label for="p1_3">Mantener la relación original entre los diferentes atributos de los elementos.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta1" value="p1_4" id="p1_4">
+                    <label for="p1_4">Elementos manteniendo el mismo orden según la clave secundaria sin importar la clave principal.</label>
+                </div>
             </form>
-            <p id="resultado1"></p>
+            
+            <div id="resultado1" class="resultado"></div>
         </div>
+
 
         <!-- Pregunta 2 -->
         <div class="question-container">
             <h2>Pregunta 2:</h2>
             <p>¿Cuál es la capital de Italia?</p>
-            <button id="infoBtn2" class="info-btn" style="display: none;" onclick="toggleInfo(2)">ℹ️ Más info</button>
+            <button id="infoBtn2" class="info-btn" style="display: none;" onclick="toggleInfo(2)">Explicación</button>
             <p id="info2" style="display: none;">Roma es la capital de Italia desde la antigüedad.</p>
             <form id="quizForm2">
-                <input type="radio" name="respuesta2" value="lisboa"> Lisboa<br>
-                <input type="radio" name="respuesta2" value="roma"> Roma<br>
-                <input type="radio" name="respuesta2" value="atenas"> Atenas<br>
-                <input type="radio" name="respuesta2" value="parís"> París<br>
+                <div>
+                    <input type="radio" name="respuesta2" value="p2_1" id="p2_1">
+                    <label for="p2_1">Elementos con claves secundarias siendo excluidos del ordenamiento.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta2" value="p2_2" id="p2_2">
+                    <label for="p2_2">Mantener los elementos con la misma clave principal en el mismo orden relativo dentro del grupo al que pertenecen.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta2" value="p2_3" id="p2_3">
+                    <label for="p2_3">Mantener la relación original entre los diferentes atributos de los elementos.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta2" value="p2_4" id="p2_4">
+                    <label for="p2_4">Elementos manteniendo el mismo orden según la clave secundaria sin importar la clave principal.</label>
+                </div>
             </form>
-            <p id="resultado2"></p>
+            <div id="resultado2" class="resultado"></div>
         </div>
 
         <!-- Pregunta 3 -->
         <div class="question-container">
             <h2>Pregunta 3:</h2>
             <p>¿Cuál es la capital de Alemania?</p>
-            <button id="infoBtn3" class="info-btn" style="display: none;" onclick="toggleInfo(3)">ℹ️ Más info</button>
+            <button id="infoBtn3" class="info-btn" style="display: none;" onclick="toggleInfo(3)">Explicación</button>
             <p id="info3" style="display: none;">Berlín es la capital de Alemania desde 1990.</p>
             <form id="quizForm3">
-                <input type="radio" name="respuesta3" value="berlín"> Berlín<br>
-                <input type="radio" name="respuesta3" value="madrid"> Madrid<br>
-                <input type="radio" name="respuesta3" value="parís"> París<br>
-                <input type="radio" name="respuesta3" value="roma"> Roma<br>
+                <div>
+                    <input type="radio" name="respuesta3" value="p3_1" id="p3_1">
+                    <label for="p3_1">Elementos con claves secundarias siendo excluidos del ordenamiento.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta3" value="p3_2" id="p3_2">
+                    <label for="p3_2">Mantener los elementos con la misma clave principal en el mismo orden relativo dentro del grupo al que pertenecen.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta3" value="p3_3" id="p3_3">
+                    <label for="p3_3">Mantener la relación original entre los diferentes atributos de los elementos.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta3" value="p3_4" id="p3_4">
+                    <label for="p3_4">Elementos manteniendo el mismo orden según la clave secundaria sin importar la clave principal.</label>
+                </div>
             </form>
-            <p id="resultado3"></p>
+            <div id="resultado3" class="resultado"></div>
         </div>
 
         <!-- Pregunta 4 -->
         <div class="question-container">
             <h2>Pregunta 4:</h2>
             <p>¿Cuál es la capital de España?</p>
-            <button id="infoBtn4" class="info-btn" style="display: none;" onclick="toggleInfo(4)">ℹ️ Más info</button>
+            <button id="infoBtn4" class="info-btn" style="display: none;" onclick="toggleInfo(4)">Explicación</button>
             <p id="info4" style="display: none;">Madrid es la capital de España desde 1561.</p>
             <form id="quizForm4">
-                <input type="radio" name="respuesta4" value="berlín"> Berlín<br>
-                <input type="radio" name="respuesta4" value="madrid"> Madrid<br>
-                <input type="radio" name="respuesta4" value="parís"> París<br>
-                <input type="radio" name="respuesta4" value="roma"> Roma<br>
+                <div>
+                    <input type="radio" name="respuesta4" value="p4_1" id="p4_1">
+                    <label for="p4_1">Elementos con claves secundarias siendo excluidos del ordenamiento.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta4" value="p4_2" id="p4_2">
+                    <label for="p4_2">Mantener los elementos con la misma clave principal en el mismo orden relativo dentro del grupo al que pertenecen.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta4" value="p4_3" id="p4_3">
+                    <label for="p4_3">Mantener la relación original entre los diferentes atributos de los elementos.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta4" value="p4_4" id="p4_4">
+                    <label for="p4_4">Elementos manteniendo el mismo orden según la clave secundaria sin importar la clave principal.</label>
+                </div>
             </form>
-            <p id="resultado4"></p>
+            <div id="resultado4" class="resultado"></div>
         </div>
 
         <!-- Pregunta 5 -->
         <div class="question-container">
             <h2>Pregunta 5:</h2>
             <p>¿Cuál es la capital de Portugal?</p>
-            <button id="infoBtn5" class="info-btn" style="display: none;" onclick="toggleInfo(5)">ℹ️ Más info</button>
+            <button id="infoBtn5" class="info-btn" style="display: none;" onclick="toggleInfo(5)">Explicación</button>
             <p id="info5" style="display: none;">Lisboa es la capital de Portugal desde 1255.</p>
             <form id="quizForm5">
-                <input type="radio" name="respuesta5" value="lisboa"> Lisboa<br>
-                <input type="radio" name="respuesta5" value="madrid"> Madrid<br>
-                <input type="radio" name="respuesta5" value="parís"> París<br>
-                <input type="radio" name="respuesta5" value="roma"> Roma<br>
+                <div>
+                    <input type="radio" name="respuesta5" value="p5_1" id="p5_1">
+                    <label for="p5_1">Elementos con claves secundarias siendo excluidos del ordenamiento.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta5" value="p5_2" id="p5_2">
+                    <label for="p5_2">Mantener los elementos con la misma clave principal en el mismo orden relativo dentro del grupo al que pertenecen.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta5" value="p5_3" id="p5_3">
+                    <label for="p5_3">Mantener la relación original entre los diferentes atributos de los elementos.</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="respuesta5" value="p5_4" id="p5_4">
+                    <label for="p5_4">Elementos manteniendo el mismo orden según la clave secundaria sin importar la clave principal.</label>
+                </div>
             </form>
-            <p id="resultado5"></p>
+            <div id="resultado5" class="resultado"></div>
         </div>
     </div>
 
