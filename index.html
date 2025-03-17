@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <h1>Cuestionario Insertion Sort</h1>
+    <h1>Cuestionario - Insertion Sort</h1>
 
     <p>Haz clic en el siguiente enlace para descargar el código de Insertion Sort en Python: <a id = "download-link" href="Insertion_sort.py" download="Insertion_sort.py">Insertion_sort.py</a>
     </p>
@@ -19,28 +19,100 @@
         <!-- Pregunta 1 -->
         <div class="question-container">
             <h2>Pregunta 1:</h2>
-            <p>La estabilidad en un algoritmo de ordenamiento puede referirse a:</p>
+            <p>Si el arreglo está casí ordenado, ¿cuántas comparaciones realizará Insertion Sort en promedio?:</p>
             <button id="infoBtn1" class="info-btn" style="display: none;" onclick="toggleInfo(1)">Explicación</button>
-            <p id="info1" style="display: none;">Si dos elementos tienen la misma <strong>clave principal</strong>, el algoritmo estable mantiene el orden original de esos elementos según aparecían en la lista.</p>
+            <p id="info1" style="display: none;">
+                En el peor caso sería:
+                <math>
+                    <mfrac>
+                      <mrow>
+                        <mi>N</mi>
+                        <mo>x</mo>
+                        <mo>(</mo><mi>N</mi><mo>-</mo><mn>1</mn><mo>)</mo>
+                      </mrow>
+                      <mn>2</mn>
+                    </mfrac>
+                  </math>
+
+                  ,por lo tanto, si los elementos están <strong>casi ordenados</strong>, realizará menos comparaciones, en promedio sería la mitad:
+                <math>
+                    <mfrac>
+                      <mrow>
+                        <mi>N</mi>
+                        <mo>x</mo>
+                        <mo>(</mo><mi>N</mi><mo>-</mo><mn>1</mn><mo>)</mo>
+                      </mrow>
+                      <mn>4</mn>
+                    </mfrac>
+                  </math>
+            
+            </p>
             <form id="quizForm1">
                 <div>
                     <input type="radio" name="respuesta1" value="p1_1" id="p1_1">
-                    <label for="p1_1">Elementos con claves secundarias siendo excluidos del ordenamiento.</label>
+                    <label for="p1_1">
+                        <math>
+                            <mfrac>
+                              <mrow>
+                                <mi>N</mi>
+                                <mo>x</mo>
+                                <mo>(</mo><mi>N</mi><mo>-</mo><mn>2</mn><mo>)</mo>
+                              </mrow>
+                              <mn>4</mn>
+                            </mfrac>
+                          </math>
+                    </label>
                 </div>
             
                 <div>
                     <input type="radio" name="respuesta1" value="p1_2" id="p1_2">
-                    <label for="p1_2">Mantener los elementos con la misma clave principal en el mismo orden relativo dentro del grupo al que pertenecen.</label>
+                    <label for="p1_2">
+                        <math>
+                            <mfrac>
+                              <mrow>
+                                <mi>N</mi>
+                                <mo>x</mo>
+                                <mo>(</mo><mi>N</mi><mo>-</mo><mn>1</mn><mo>)</mo>
+                              </mrow>
+                              <mn>2</mn>
+                            </mfrac>
+                          </math>
+                    </label>
+                    </label>
                 </div>
             
                 <div>
                     <input type="radio" name="respuesta1" value="p1_3" id="p1_3">
-                    <label for="p1_3">Mantener la relación original entre los diferentes atributos de los elementos.</label>
+                    <label for="p1_3">
+                        <math>
+                            <mfrac>
+                              <mrow>
+                                <mi>N</mi>
+                                <mo>x</mo>
+                                <mo>(</mo><mi>N</mi><mo>-</mo><mn>1</mn><mo>)</mo>
+                              </mrow>
+                              <mn>4</mn>
+                            </mfrac>
+                          </math>
+                    </label>
+                    </label>
                 </div>
             
                 <div>
                     <input type="radio" name="respuesta1" value="p1_4" id="p1_4">
-                    <label for="p1_4">Elementos manteniendo el mismo orden según la clave secundaria sin importar la clave principal.</label>
+                    <label for="p1_4">
+                        <math>
+                            <mfrac>
+                              <mrow>
+                                <mi>N</mi>
+                                <mo>x</mo>
+                                <mo>(</mo><mi>N</mi><mo>-</mo><mn>2</mn><mo>)</mo>
+                              </mrow>
+                              <mn>2</mn>
+                            </mfrac>
+                          </math>
+                    </label>
+                    </label>
                 </div>
             </form>
             
@@ -51,9 +123,9 @@
         <!-- Pregunta 2 -->
         <div class="question-container">
             <h2>Pregunta 2:</h2>
-            <p>¿Cuál es la capital de Italia?</p>
+            <p>La estabilidad en un algoritmo de ordenamiento puede referirse a:</p>
             <button id="infoBtn2" class="info-btn" style="display: none;" onclick="toggleInfo(2)">Explicación</button>
-            <p id="info2" style="display: none;">Roma es la capital de Italia desde la antigüedad.</p>
+            <p id="info2" style="display: none;">Si dos elementos tienen la misma <strong>clave principal</strong>, el algoritmo estable mantiene el orden original de esos elementos según aparecían en la lista.</p>
             <form id="quizForm2">
                 <div>
                     <input type="radio" name="respuesta2" value="p2_1" id="p2_1">
@@ -81,28 +153,28 @@
         <!-- Pregunta 3 -->
         <div class="question-container">
             <h2>Pregunta 3:</h2>
-            <p>¿Cuál es la capital de Alemania?</p>
+            <p>En el ordenamiento por inserción, después de que un elemento se inserta en el grupo parcialmente ordenado...</p>
             <button id="infoBtn3" class="info-btn" style="display: none;" onclick="toggleInfo(3)">Explicación</button>
-            <p id="info3" style="display: none;">Berlín es la capital de Alemania desde 1990.</p>
+            <p id="info3" style="display: none;">En el ordenamiento por inserción, cada elemento se compara con los de la izquierda. Si es menor, los elementos mayores se desplazan a la derecha para hacer espacio. Una vez insertado, puede moverse nuevamente a la derecha si se insertan otros elementos, pero <strong>nunca se desplaza a la izquierda.</strong></p>
             <form id="quizForm3">
                 <div>
                     <input type="radio" name="respuesta3" value="p3_1" id="p3_1">
-                    <label for="p3_1">Elementos con claves secundarias siendo excluidos del ordenamiento.</label>
+                    <label for="p3_1">Nunca se desplaza a la izquierda.</label>
                 </div>
             
                 <div>
                     <input type="radio" name="respuesta3" value="p3_2" id="p3_2">
-                    <label for="p3_2">Mantener los elementos con la misma clave principal en el mismo orden relativo dentro del grupo al que pertenecen.</label>
+                    <label for="p3_2">Nunca se mueve de nuevo.</label>
                 </div>
             
                 <div>
                     <input type="radio" name="respuesta3" value="p3_3" id="p3_3">
-                    <label for="p3_3">Mantener la relación original entre los diferentes atributos de los elementos.</label>
+                    <label for="p3_3">A menudo se mueve fuera de este grupo.</label>
                 </div>
             
                 <div>
                     <input type="radio" name="respuesta3" value="p3_4" id="p3_4">
-                    <label for="p3_4">Elementos manteniendo el mismo orden según la clave secundaria sin importar la clave principal.</label>
+                    <label for="p3_4">Encuentra que su grupo se va reduciendo constantemente.</label>
                 </div>
             </form>
             <div id="resultado3" class="resultado"></div>

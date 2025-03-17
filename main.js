@@ -1,8 +1,8 @@
 function verificarRespuestas() {
     let respuestasCorrectas = {
-        "respuesta1": "p1_2",
+        "respuesta1": "p1_3",
         "respuesta2": "p2_2",
-        "respuesta3": "p3_2",
+        "respuesta3": "p3_1",
         "respuesta4": "p4_2",
         "respuesta5": "p5_2"
     };
