@@ -3,7 +3,7 @@ function verificarRespuestas() {
         "respuesta1": "p1_3",
         "respuesta2": "p2_2",
         "respuesta3": "p3_1",
-        "respuesta4": "p4_2",
+        "respuesta4": "p4_3",
         "respuesta5": "p5_2"
     };
 

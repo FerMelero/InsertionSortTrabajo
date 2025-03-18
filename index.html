@@ -183,28 +183,40 @@
         <!-- Pregunta 4 -->
         <div class="question-container">
             <h2>Pregunta 4:</h2>
-            <p>¿Cuál es la capital de España?</p>
+            <p>¿Cuándo usar cada algoritmo?</p>
             <button id="infoBtn4" class="info-btn" style="display: none;" onclick="toggleInfo(4)">Explicación</button>
-            <p id="info4" style="display: none;">Madrid es la capital de España desde 1561.</p>
+            <p id="info4" style="display: none;">
+                Si los datos están <strong>casi ordenados</strong>, es mejor usar <strong>Insertion Sort</strong>, ya que se adapta bien a este tipo de listas. 
+                Si los <strong>intercambios</strong> son <strong>costosos</strong>, lo más adecuado es usar <strong>Selection Sort</strong>, porque minimiza el número de swaps. 
+                En casos donde hay <strong>pocos datos</strong> y <strong>no hay otras opciones</strong> viables, <strong>Bubble Sort</strong> puede ser una opción, aunque no es eficiente.
+            </p>
             <form id="quizForm4">
+                
                 <div>
                     <input type="radio" name="respuesta4" value="p4_1" id="p4_1">
-                    <label for="p4_1">Elementos con claves secundarias siendo excluidos del ordenamiento.</label>
+                    <label for="p4_1">
+                        Si los datos están casi ordenados 🢡 <strong>Selection Sort</strong><br>
+                        Si los swaps/intercambios son costosos 🢡 <strong>Bubble Sort</strong><br>
+                        Si hay muy pocos datos y no hay otra opción 🢡 <strong>Insertion Sort</strong><br>
+                        </label>
                 </div>
             
                 <div>
                     <input type="radio" name="respuesta4" value="p4_2" id="p4_2">
-                    <label for="p4_2">Mantener los elementos con la misma clave principal en el mismo orden relativo dentro del grupo al que pertenecen.</label>
+                    <label for="p4_2">
+                        Si los datos están casi ordenados 🢡 <strong>Bubble Sort</strong><br>
+                        Si los swaps/intercambios son costosos 🢡 <strong>Insertion Sort</strong><br>
+                        Si hay muy pocos datos y no hay otra opción 🢡 <strong>Selection Sort</strong><br>
+                        </label>
                 </div>
             
                 <div>
                     <input type="radio" name="respuesta4" value="p4_3" id="p4_3">
-                    <label for="p4_3">Mantener la relación original entre los diferentes atributos de los elementos.</label>
-                </div>
-            
-                <div>
-                    <input type="radio" name="respuesta4" value="p4_4" id="p4_4">
-                    <label for="p4_4">Elementos manteniendo el mismo orden según la clave secundaria sin importar la clave principal.</label>
+                    <label for="p4_3">
+                        Si los datos están casi ordenados 🢡 <strong>Insertion Sort</strong><br>
+                        Si los swaps/intercambios son costosos 🢡 <strong>Selection Sort</strong><br>
+                        Si hay muy pocos datos y no hay otra opción 🢡 <strong>Bubble Sort</strong><br>
+                        </label>
                 </div>
             </form>
             <div id="resultado4" class="resultado"></div>
