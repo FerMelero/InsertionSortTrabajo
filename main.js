@@ -4,13 +4,14 @@ function verificarRespuestas() {
         "respuesta2": "p2_2",
         "respuesta3": "p3_1",
         "respuesta4": "p4_3",
-        "respuesta5": "p5_2"
+        "respuesta5": "p5_2",
+        "respuesta6": "p6_2"
     };
 
     let todasRespondidas = true;
 
     // Verificar si todas las preguntas han sido respondidas
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 6; i++) {  // Cambiar el límite a 6 para incluir las nuevas preguntas
         let opciones = document.getElementsByName("respuesta" + i);
         let respondida = false;
 
@@ -33,7 +34,7 @@ function verificarRespuestas() {
     }
 
     // Evaluar respuestas
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 6; i++) {  // Cambiar el límite a 6 para incluir las nuevas preguntas
         let opciones = document.getElementsByName("respuesta" + i);
         let respuestaCorrecta = respuestasCorrectas["respuesta" + i];
         let respuestaUsuario = "";
@@ -76,8 +77,6 @@ function verificarRespuestas() {
     }
 }
 
-
-
 function toggleInfo(preguntaId) {
     const info = document.getElementById(`info${preguntaId}`);
     // Alternar la visibilidad del texto
@@ -91,6 +90,3 @@ function toggleInfo(preguntaId) {
         info.style.padding = "";  // Quitar el padding cuando se oculte
     }
 }
-
-
-

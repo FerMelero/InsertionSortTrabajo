@@ -222,35 +222,56 @@
             <div id="resultado4" class="resultado"></div>
         </div>
 
-        <!-- Pregunta 5 -->
-        <div class="question-container">
-            <h2>Pregunta 5:</h2>
-            <p>¿Cuál es la capital de Portugal?</p>
-            <button id="infoBtn5" class="info-btn" style="display: none;" onclick="toggleInfo(5)">Explicación</button>
-            <p id="info5" style="display: none;">Lisboa es la capital de Portugal desde 1255.</p>
-            <form id="quizForm5">
-                <div>
-                    <input type="radio" name="respuesta5" value="p5_1" id="p5_1">
-                    <label for="p5_1">Elementos con claves secundarias siendo excluidos del ordenamiento.</label>
-                </div>
-            
-                <div>
-                    <input type="radio" name="respuesta5" value="p5_2" id="p5_2">
-                    <label for="p5_2">Mantener los elementos con la misma clave principal en el mismo orden relativo dentro del grupo al que pertenecen.</label>
-                </div>
-            
-                <div>
-                    <input type="radio" name="respuesta5" value="p5_3" id="p5_3">
-                    <label for="p5_3">Mantener la relación original entre los diferentes atributos de los elementos.</label>
-                </div>
-            
-                <div>
-                    <input type="radio" name="respuesta5" value="p5_4" id="p5_4">
-                    <label for="p5_4">Elementos manteniendo el mismo orden según la clave secundaria sin importar la clave principal.</label>
-                </div>
-            </form>
-            <div id="resultado5" class="resultado"></div>
+<!-- Pregunta 5 -->
+<div class="question-container">
+    <h2>Pregunta 5:</h2>
+    <p>¿Qué es la invariante en el algoritmo de Insertion Sort?</p>
+    <button id="infoBtn5" class="info-btn" style="display: none;" onclick="toggleInfo(5)">Explicación</button>
+    <p id="info5" style="display: none;">El invariante en Selection Sort es que los elementos con índices menores o iguales que i están ordenados.</p>
+    <form id="quizForm5">
+        <div>
+            <input type="radio" name="respuesta5" value="p5_1" id="p5_1">
+            <label for="p5_1">Se asegura que todos los elementos a la derecha de i están ordenados.</label>
         </div>
+
+        <div>
+            <input type="radio" name="respuesta5" value="p5_2" id="p5_2">
+            <label for="p5_2">Se clasifican los elementos con índices menores o iguales que i.</label>
+        </div>
+
+        <div>
+            <input type="radio" name="respuesta5" value="p5_3" id="p5_3">
+            <label for="p5_3">El valor de i siempre es el índice del elemento más pequeño en la lista.</label>
+        </div>
+
+        <div>
+            <input type="radio" name="respuesta5" value="p5_4" id="p5_4">
+            <label for="p5_4">Los elementos a la izquierda de i son siempre mayores que los elementos a la derecha.</label>
+        </div>
+    </form>
+    <div id="resultado5" class="resultado"></div>
+</div>
+
+<!-- Pregunta 6 -->
+<div class="question-container">
+    <h2>Pregunta 6:</h2>
+    <p>El efecto que tienen los duplicados en Insertion Sort sobre la estabilidad del algoritmo, ¿es positiva o no?</p>
+    <button id="infoBtn6" class="info-btn" style="display: none;" onclick="toggleInfo(6)">Explicación</button>
+    <p id="info6" style="display: none;">Los duplicados no afectan al algoritmo, ya que Insertion Sort es un algoritmo estable.</p>
+    <form id="quizForm6">
+        <div>
+            <input type="radio" name="respuesta6" value="p6_1" id="p6_1">
+            <label for="p6_1">Los duplicados afectan a la estabilidad.</label>
+        </div>
+
+        <div>
+            <input type="radio" name="respuesta6" value="p6_2" id="p6_2">
+            <label for="p6_2">Los duplicados no afectan al algoritmo.</label>
+        </div>
+    </form>
+    <div id="resultado6" class="resultado"></div>
+</div>
+
     </div>
 
     <button id="comprobarBtn" onclick="verificarRespuestas()">Comprobar</button>
